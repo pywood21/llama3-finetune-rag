@@ -1,0 +1,29 @@
+# Core deep learning
+torch>=2.1.0
+transformers>=4.41.0
+peft>=0.11.1
+accelerate>=0.29.0
+bitsandbytes>=0.43.0
+
+# Datasets & preprocessing
+datasets>=2.20.0
+scikit-learn>=1.5.0
+pandas>=2.2.0
+numpy>=1.26.0
+
+# Evaluation
+sentence-transformers>=2.7.0
+bert-score>=0.3.13
+rouge-score>=0.1.2
+nltk>=3.8.1
+
+# Vector index
+faiss-gpu>=1.7.4; sys_platform == "linux" and extra_index_url
+faiss-cpu>=1.7.4; sys_platform == "win32"
+
+# Logging & visualization
+tensorboard>=2.17.0
+tqdm>=4.66.0
+
+# Optional (GPU monitoring)
+pynvml>=11.5.0
